@@ -2,6 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
 import odoo.tests.common as common
+from odoo.fields import Domain
 from odoo.tools import test_reports
 
 from ..models.accounting_none import AccountingNone
@@ -417,7 +418,9 @@ class TestMisReportInstance(common.HttpCase):
             )
             .ids
         )
-        self.assertTrue(("account_id", "in", tuple(account_ids)) in action["domain"])
+        domain_list = list(Domain(action["domain"]))
+        self.assertIn(("account_id", "in", account_ids), domain_list)
+
         self.assertEqual(action["res_model"], "account.move.line")
 
     def test_drilldown_action_name_with_account(self):
