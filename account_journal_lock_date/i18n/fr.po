@@ -1,44 +1,47 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * account_journal_lock_date
+# 	* account_journal_lock_date
 #
-# Translators:
-# OCA Transbot <transbot@odoo-community.org>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0\n"
+"Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-30 00:47+0000\n"
-"PO-Revision-Date: 2017-05-30 00:47+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
-"Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
-"Language: fr\n"
+"POT-Creation-Date: 2026-05-11 20:25+0000\n"
+"PO-Revision-Date: 2026-05-11 16:40-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.9\n"
 
 #. module: account_journal_lock_date
 #: model_terms:ir.ui.view,arch_db:account_journal_lock_date.update_journal_lock_dates_wizard_view_form
 msgid "Cancel"
-msgstr ""
+msgstr "Annuler"
 
 #. module: account_journal_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_update_journal_lock_dates_wizard__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Créé par"
 
 #. module: account_journal_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_update_journal_lock_dates_wizard__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Créé le"
 
 #. module: account_journal_lock_date
+#: model:ir.model.fields,field_description:account_journal_lock_date.field_account_journal__display_name
+#: model:ir.model.fields,field_description:account_journal_lock_date.field_account_move__display_name
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_update_journal_lock_dates_wizard__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nom affiché"
 
 #. module: account_journal_lock_date
+#: model:ir.model.fields,field_description:account_journal_lock_date.field_account_journal__id
+#: model:ir.model.fields,field_description:account_journal_lock_date.field_account_move__id
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_update_journal_lock_dates_wizard__id
 msgid "ID"
 msgstr ""
@@ -46,47 +49,51 @@ msgstr ""
 #. module: account_journal_lock_date
 #: model:ir.model,name:account_journal_lock_date.model_account_journal
 msgid "Journal"
-msgstr "Journal"
+msgstr ""
 
 #. module: account_journal_lock_date
 #: model:ir.model,name:account_journal_lock_date.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Écriture comptable"
 
 #. module: account_journal_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_update_journal_lock_dates_wizard__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Dernière mise à jour par"
 
 #. module: account_journal_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_update_journal_lock_dates_wizard__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Dernière mise à jour le"
 
 #. module: account_journal_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_account_journal__fiscalyear_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_update_journal_lock_dates_wizard__fiscalyear_lock_date
 msgid "Lock Date"
-msgstr ""
+msgstr "Date de gel"
 
 #. module: account_journal_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_account_journal__period_lock_date
 #: model:ir.model.fields,field_description:account_journal_lock_date.field_update_journal_lock_dates_wizard__period_lock_date
 msgid "Lock Date for Non-Advisers"
-msgstr ""
+msgstr "Date de gel pour usagers"
 
 #. module: account_journal_lock_date
 #: model:ir.model,name:account_journal_lock_date.model_update_journal_lock_dates_wizard
 msgid "Mass Update Journal Lock Dates Wizard"
 msgstr ""
+"Assistant de verrouillage des dates du journal de mise à jour en masse"
 
 #. module: account_journal_lock_date
 #: model:ir.model.fields,help:account_journal_lock_date.field_account_journal__fiscalyear_lock_date
 msgid ""
 "No users, including Advisers, can edit accounts prior to and inclusive of "
-"this date for this journal. Use it for fiscal year locking for this journal, "
-"for example."
+"this date for this journal. Use it for fiscal year locking for this "
+"journal, for example."
 msgstr ""
+"Aucun utilisateur, y compris les conseillers, ne peut modifier les comptes "
+"avant cette date pour ce journal. Utilisez cette option pour le "
+"verrouillage de l'exercice financier de ce journal, par exemple."
 
 #. module: account_journal_lock_date
 #: model:ir.model.fields,help:account_journal_lock_date.field_account_journal__period_lock_date
@@ -95,46 +102,45 @@ msgid ""
 "of this date for this journal. Use it for period locking inside an open "
 "fiscal year for this journal, for example."
 msgstr ""
+"Seuls les utilisateurs ayant le rôle de « Conseiller » peuvent modifier les "
+"comptes antérieurs à cette date et y compris celle-ci pour ce journal. "
+"Utilisez cette fonction pour verrouiller les périodes au sein d'un exercice "
+"fiscal ouvert pour ce journal, par exemple."
 
 #. module: account_journal_lock_date
 #: model_terms:ir.ui.view,arch_db:account_journal_lock_date.update_journal_lock_dates_wizard_view_form
 msgid "Update"
-msgstr ""
+msgstr "Mise à jour"
 
 #. module: account_journal_lock_date
 #: model:ir.actions.act_window,name:account_journal_lock_date.update_journal_lock_dates_wizard_action
 msgid "Update journals lock dates"
-msgstr ""
+msgstr "Mettre à jour les dates de gel des journaux"
 
 #. module: account_journal_lock_date
 #. odoo-python
 #: code:addons/account_journal_lock_date/wizards/update_journal_lock_dates.py:0
-#, python-format
 msgid "You are not allowed to execute this action."
-msgstr ""
+msgstr "Vous n'êtes pas autorisé à effectuer cette action."
 
 #. module: account_journal_lock_date
 #. odoo-python
 #: code:addons/account_journal_lock_date/models/account_move.py:0
-#, python-format
 msgid ""
 "You cannot add/modify entries for the journal '%(journal)s' prior to and "
 "inclusive of the lock date %(journal_date)s"
 msgstr ""
+"Vous ne pouvez pas ajouter/modifier d'entrées pour le journal '%(journal)s' "
+"avant la date de gel %(journal_date)s incluse."
 
 #. module: account_journal_lock_date
 #. odoo-python
 #: code:addons/account_journal_lock_date/models/account_move.py:0
-#, python-format
 msgid ""
 "You cannot add/modify entries for the journal '%(journal)s' prior to and "
 "inclusive of the lock date %(journal_date)s. Check the Journal settings or "
 "ask someone with the 'Adviser' role"
 msgstr ""
-
-#, fuzzy
-#~ msgid "Journal Entries"
-#~ msgstr "Journal"
-
-#~ msgid "Account Entry"
-#~ msgstr "Pièce comptable"
+"Vous ne pouvez pas ajouter ni modifier d'entrées pour le journal « %"
+"(journal)s » avant la date de gel « %(journal_date)s » incluse. Consultez "
+"les paramètres du journal ou demandez de l'aide à un conseiller"
